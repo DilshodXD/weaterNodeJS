@@ -14,7 +14,7 @@ const printHelp = () => {
     ${chalk.bgBlue('HELP')}
     -s [CITY] for install city
     -h [HELP] for help
-    -h [API_KEY] for saving token
+    -t [API_KEY] for saving token
   `);
 }
 

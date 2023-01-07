@@ -3,6 +3,12 @@ import path from 'path'
 import fs from 'fs'
 
 const filePath = path.join(os.homedir(), 'weather-data.json')
+
+const TOKEN_DICTIOARY = {
+  token: 'token',
+  city: 'city',
+}
+
 const saveKeyValue = async (key, value) => {
   let data = {}
   if (await isExist(filePath)) {
@@ -30,4 +36,4 @@ const isExist = async path => {
   }
 }
 
-export {saveKeyValue}
+export { saveKeyValue, getKeyValue, TOKEN_DICTIOARY }
